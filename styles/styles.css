@@ -6,6 +6,23 @@
     --mindaro: #e7ffb0ff;
 }
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .main-header {
     background-color: var(--mint);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.logo {
+    width: 80px;
+}
+.main-footer {
+    background-color: var(--msu-green);
 }
