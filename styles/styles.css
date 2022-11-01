@@ -1,0 +1,11 @@
+:root {
+    --msu-green: #244233ff;
+    --mint: #52b788ff;
+    --beige: #ffffe8ff;
+    --timberwolf: #d9dbd5ff;
+    --mindaro: #e7ffb0ff;
+}
+
+.main-header {
+    background-color: var(--mint);
+}
