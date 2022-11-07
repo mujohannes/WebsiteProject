@@ -1,4 +1,5 @@
 :root {
+    /* get colours from https://coolors.co */
     --msu-green: #244233ff;
     --mint: #52b788ff;
     --beige: #ffffe8ff;
@@ -20,9 +21,22 @@ body {
     align-items: flex-end;
     justify-content: space-between;
 }
+.main-navigation a, 
+.user-nav a,
+.footer-navigation a {
+    color: var(--beige);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+}
+
 .logo {
     width: 80px;
+    padding: 0.5em;
+    display: block;
 }
+
+/* -----------FOOTER SECTION------------------ */
 .main-footer {
     background-color: var(--msu-green);
 }
