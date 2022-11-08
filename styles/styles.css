@@ -56,12 +56,12 @@ body {
 /* --------------HOME PAGE */
 .home-banner {
     min-height: 50vh;
-    background-image: url("/images/latest/joseph-barrientos-4qSb_FWhHKs-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: grid;
     place-items: center center;
+    min-width: 100%;
 }
 
 .home-banner h2 {
@@ -71,4 +71,14 @@ body {
     text-shadow: 0px 0px 2px white;
     padding: 0.4em;
     background-color: rgba(255,255,255,0.6);
+}
+
+.slide1 {
+    background-image: url("/images/latest/joseph-barrientos-4qSb_FWhHKs-unsplash.jpg");
+}
+.slide2 {
+    background-image: url("/images/latest/luis-felipe-lins-J2-wAQDckus-unsplash.jpg");
+}
+.slide3 {
+    background-image: url("/images/latest/trendest-studio-XZ3EmAIWuz0-unsplash.jpg");
 }
