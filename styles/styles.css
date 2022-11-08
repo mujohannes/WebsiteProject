@@ -5,6 +5,8 @@
     --beige: #ffffe8ff;
     --timberwolf: #d9dbd5ff;
     --mindaro: #e7ffb0ff;
+    --serif: 'Merriweather', serif;
+    --sans: 'Open Sans', sans-serif;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: 'Merriweather', serif;
+    font-family: var(--serif);
 }
 
 .main-header {
@@ -30,7 +32,7 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 1em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--sans);
 }
 
 .logo {
@@ -50,4 +52,23 @@ body {
 .social-nav a {
     font-size: 1.5em;
     color: var(--mindaro);
+}
+/* --------------HOME PAGE */
+.home-banner {
+    min-height: 50vh;
+    background-image: url("/images/latest/joseph-barrientos-4qSb_FWhHKs-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    place-items: center center;
+}
+
+.home-banner h2 {
+    color: var(--msu-green);
+    font-size: 3em;
+    font-family: var(--sans);
+    text-shadow: 0px 0px 2px white;
+    padding: 0.4em;
+    background-color: rgba(255,255,255,0.6);
 }
