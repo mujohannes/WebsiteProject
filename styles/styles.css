@@ -27,6 +27,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-navigation a,
@@ -46,7 +47,20 @@ body {
     display: block;
 }
 
-.search {}
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    min-width: 36ch;
+}
+.search button {
+    padding: 0.5em;
+    background-color: transparent;
+}
+.search input {
+    padding: 0.5em;
+    flex: 1;
+}
 
 .sr-only {
     clip: rect(1px, 1px, 1px, 1px);
@@ -103,4 +117,20 @@ body {
 
 .slide3 {
     background-image: url("/images/latest/trendest-studio-XZ3EmAIWuz0-unsplash.jpg");
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
