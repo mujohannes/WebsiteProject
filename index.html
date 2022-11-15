@@ -30,7 +30,11 @@
       <a href="about.html">About Us</a>
     </nav>
     <form class="search" method="get" action="https://example.com/search" >
-      <input type="search" name="user-query" placeholder="search for something">
+      <label for="search-input" aria-label="search">
+        <!-- setting aria-hidden to true hides the content -->
+        <span aria-hidden="true" class="sr-only">Search</span>
+      </label>
+      <input type="search" id="search-input" name="user-query" placeholder="search for something">
       <button type="submit">Search</button>
     </form>
     <nav class="user-nav">
