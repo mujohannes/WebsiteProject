@@ -135,3 +135,37 @@ img {
     height: 300px;
     object-fit: cover;
 }
+
+.contact-form {
+    max-width: 30em;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+    line-height: 2.5em;
+    padding: 0 0.5em;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button[ type="reset" ] {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+}
+
+button[ type="submit" ] {
+    background-color: var(--msu-green);
+    color: white;
+    padding: 0.5em;
+}
+
+/* .contact-form label {
+    display: block;
+} */
